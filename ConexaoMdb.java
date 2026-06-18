@@ -4,8 +4,8 @@ import java.sql.Connection;
 import java.sql.SQLException;
 public class ConexaoMdb {
     private static final String URL = "jdbc:mariadb://localhost:3306/ESTUDO";
-    private static final String USUARIO = "root";
-    private static final String SENHA = "12345678";
+    private static final String USUARIO = "";
+    private static final String SENHA = " ";
     static {
         try{
             Class.forName("org.mariadb.jdbc.Driver");
