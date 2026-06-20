@@ -11,6 +11,7 @@ public class ConexaoMdb {
             Class.forName("org.mariadb.jdbc.Driver");
         }catch (ClassNotFoundException e){
             System.err.println("Erro critico: Drive Mariadb não encontrado!" + e.getMessage());
+            throw new RuntimeException("Falha ao carregar o Banco de dados", e);
         }
     }
     public static Connection conectar(){
